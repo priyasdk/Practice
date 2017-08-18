@@ -1,6 +1,6 @@
 //Delete the last occurence of node
 #include<stdio.h>
-#include<stdlib.h>
+#include<stdlib.h> // this is a coment
 
 struct node
 {
