@@ -1,5 +1,5 @@
 //Inserting in a linked list at 3 positions
-//
+//this is comment
 
 #include<stdio.h>
 #include<stdlib.h>
