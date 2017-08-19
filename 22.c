@@ -49,10 +49,10 @@ int push2()
   }
   if(temp->next!=NULL)
   {
-    temp1=temp->next;
-   temp->next=b;
-   printf("hello=%d\n",temp->next->data);
-  //b=temp->next;
+    temp1=temp->next;                          //temp1=temp;
+   temp->next=b;                               //temp->next=b;
+   printf("hello=%d\n",temp->next->data);      //b->next=temp1->next;  Whats wrong if we write like this.
+  //b=temp->next;                               //temp=b;               
 //  b->next=temp1->next;
 //  temp1=b->next;
     b->next=temp1;
