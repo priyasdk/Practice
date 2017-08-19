@@ -1,5 +1,6 @@
 //Finding no.of zeroes
 #include<stdio.h>
+// this is just a neww comment for new commit
 
 int bs(int a[],int l,int h)
 {
