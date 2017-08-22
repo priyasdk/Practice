@@ -13,18 +13,18 @@ struct node
 int push()
 
 {
-  struct node new_node=(struct node*)malloc(sizeof(struct node));
+  struct node *new_node=(struct node*)malloc(sizeof(struct node));
   printf("Enter the data\n" );
-  scanf("%d",new_node->data);
+  scanf("%d",&new_node->data);
   if(head==NULL)
   {
-    head=&new_node;
+    head=new_node;
     temp=head;
   }
   else
   {
-    temp->next=&new_node;
-    temp=&new_node;
+    temp->next=new_node;
+    temp=new_node;
   }
   temp->next=NULL;
 
@@ -41,10 +41,10 @@ void display()
 
 int len(struct node *temp)
 {
-  if(head==NULL)
+  if(temp==NULL)
   return 0;
   else
-  return 1+len(head->next);
+  return 1+len(temp->next);
 
 }
 int main()
