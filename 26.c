@@ -16,11 +16,11 @@ int findmid()
   printf("\n");
   temp1=head;
   temp2=head;
-  temp3=head;
-  temp4=head;
-
-
-  while(temp3!=NULL||temp4!=NULL)
+//  temp3=head;
+//  temp4=head;
+printf("Excuse me\n");
+/*
+  while(temp3!=NULL||temp4->next!=NULL)
   {
     printf("In while loop\n");
     temp3=temp2->next;
@@ -30,9 +30,16 @@ int findmid()
   //  temp4=temp2;
     temp1=temp1->next;
     temp2=temp2->next->next;
-
-    printf("temp1=%d\ntemp2=%d\n",temp3->data,temp4->data);
-  }
+  //  printf("temp1=%d\ntemp2=%d\n",temp1->data,temp2->data);
+}*/
+while(temp2!=NULL||temp2->next!=NULL)
+{
+  temp1=temp1->next;
+  printf("temp1=%d",temp1->data);
+  temp2=temp2->next->next;
+  printf("temp2=%d",temp2->data);
+}
+  printf("Hello\n");
   printf("The middle element is %d",temp1->data);
   printf("hey\n");
 }
@@ -58,11 +65,11 @@ int push()
 }
 void display()
 {
-  temp2=head;
-  while(temp2!=NULL)
+  temp3=head;
+  while(temp3!=NULL)
   {
-    printf("%d\n",temp2->data);
-    temp2=temp2->next;
+    printf("%d\n",temp3->data);
+    temp3=temp3->next;
   }
 }
 
