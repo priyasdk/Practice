@@ -8,19 +8,14 @@ struct node
   int data;
   struct node* next;
 }
-*head=NULL,*temp,*temp1,*temp2,*temp3,*temp4;
+*head=NULL,*temp,*temp1,*temp2;
 
 int findmid()
 {
   printf("In findmin function");
   printf("\n");
   temp1=head;
-  temp2=head;
-//  temp3=head;
-//  temp4=head;
-printf("Excuse me\n");
-/*
-  while(temp3!=NULL||temp4->next!=NULL)
+  temp2=head;ile(temp3!=NULL||temp4->next!=NULL)
   {
     printf("In while loop\n");
     temp3=temp2->next;
@@ -32,16 +27,16 @@ printf("Excuse me\n");
     temp2=temp2->next->next;
   //  printf("temp1=%d\ntemp2=%d\n",temp1->data,temp2->data);
 }*/
-while(temp2!=NULL||temp2->next!=NULL)
+  while(temp2!=NULL&&temp2->next!=NULL)
 {
   temp1=temp1->next;
-  printf("temp1=%d",temp1->data);
   temp2=temp2->next->next;
-  printf("temp2=%d",temp2->data);
 }
-  printf("Hello\n");
-  printf("The middle element is %d",temp1->data);
-  printf("hey\n");
+  if(head->next->next==NULL)
+    printf("There is no mid element:\n");
+  else
+    printf("The middle element is %d",temp1->data);
+
 }
 
 int push()
